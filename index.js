@@ -1,6 +1,7 @@
 // найдем первую кнопку по id
-const btn = document.getElementById("magic-btn");
+//const btn = document.getElementById("magic-btn");
 // скопируем ее - получилась вторая кнопка. Ее можно использовать.
+const btn = document.getElementById("magic-btn");
 const clonedBtn = btn.cloneNode(true);
 // задали id
 clonedBtn.id = "magic-btn-2";
@@ -20,3 +21,9 @@ clonedBtn.addEventListener('click', ()=>{
   btn.style.backgroundColor="#9c4a1a";
   btn.style.color="black";
 })
+
+let array=["John","Bobby", "Garry", "Klaudia" ];
+for(let i=0; i<=array.length; i++){
+  array[i]= "MC "+ array[i];
+}
+console.log(array);
